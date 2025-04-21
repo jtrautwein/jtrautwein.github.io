@@ -1,0 +1,26 @@
+body{
+    background-color: blanchedalmond;
+    text-decoration-color: brown;
+    list-style-type: none;
+    font-family: DM Sans, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: .8cm;
+    color: rgb(0, 0, 0);
+    padding: 00;
+}
+
+img{
+    width: 40%;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration-color: brown;
+    padding-left: 0;
+}
+
+footer{
+    font-weight: 175;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
