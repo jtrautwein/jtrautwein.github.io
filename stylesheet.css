@@ -1,26 +1,47 @@
-body{
-    background-color: blanchedalmond;
-    text-decoration-color: brown;
+h1{
+    text-align: center;
+    font-size: 100;
+    color:rgb(20, 105, 47);
+    list-style-type:circle
+}
+
+ul{
+    display: flex;
+    gap:20px;
     list-style-type: none;
-    font-family: DM Sans, sans-serif;
+    text-align: center;
+    padding:0;
+}
+
+nav{
+    line-height: 2;
+}
+
+body{
+    font-family: "Barlow", sans-serif;
+    font-size: large;
+    color:rgb(0, 255, 81);
+    line-height 1.5em;
+    background-color:rgb(222, 253, 183);
+    background-image:;
+    text-decoration:-o-repeating-linear-gradient(5%);
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 500;
     font-style: .8cm;
     color: rgb(0, 0, 0);
     padding: 00;
+    line width: 30%
 }
 
-img{
-    width: 40%;
+a:link{
+    color:rgb(22, 101, 47);
+    text-decoration: none;
+}
+ 
+ul{
+    a:hover{
+        color:rgb(22, 101, 47);
+        text-decoration: underline;
+    }
 }
 
-ul {
-    list-style-type: none;
-    text-decoration-color: brown;
-    padding-left: 0;
-}
-
-footer{
-    font-weight: 175;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
