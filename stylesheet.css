@@ -1,47 +1,70 @@
-h1{
+.columns {float:left;} 
+.col-1 {width: 8.33%;} 
+.col-2 {width: 16.66%;} 
+.col-3 {width: 25%;} 
+.col-4 {width: 33.33%;} 
+.col-5 {width: 41.66%;} 
+.col-6 {width: 50%;} 
+.col-7 {width: 58.33%;} 
+.col-8 {width: 66.66%;} 
+.col-9 {width: 75%;} 
+.col-10 {width: 83.33%;} 
+.col-11 {width: 91.66%;} 
+.col-12 {width: 100%;} 
+
+h1 {
     text-align: center;
-    font-size: 100;
-    color:rgb(20, 105, 47);
-    list-style-type:circle
+    font-size: 50px;
+    color: rgb(225, 0, 255);
 }
 
-ul{
-    display: flex;
-    gap:20px;
+ul {
+    gap: 20px;
     list-style-type: none;
     text-align: center;
-    padding:0;
+    padding: 0%;
 }
 
-nav{
+li {
+  padding-right: 20px;
+  display: inline;
+
+}
+
+div {
     line-height: 2;
+    color: rgb(43, 255, 0);
 }
 
-body{
+body {
     font-family: "Barlow", sans-serif;
     font-size: large;
-    color:rgb(0, 255, 81);
-    line-height 1.5em;
-    background-color:rgb(222, 253, 183);
-    background-image:;
-    text-decoration:-o-repeating-linear-gradient(5%);
+    color: rgb(255, 255, 255);
+    line-height: 1.5em;
+    background-color: rgb(0, 0, 0);
+    background-image: none;
     font-optical-sizing: auto;
     font-weight: 500;
-    font-style: .8cm;
-    color: rgb(0, 0, 0);
-    padding: 00;
-    line width: 30%
 }
 
-a:link{
-    color:rgb(22, 101, 47);
-    text-decoration: none;
-}
- 
-ul{
-    a:hover{
-        color:rgb(22, 101, 47);
-        text-decoration: underline;
-    }
+img {
+  width: 100%;
 }
 
+footer {
+    color: rgb(246, 255, 0);
+    text-align: left;
+    font-size: medium;
+    font-weight: lighter;
+    clear: left;
+}
+
+ul a:hover {
+    color: rgb(0, 17, 255);
+    text-decoration: underline;
+}
+
+  .relative {
+    position: relative;
+    left: auto;
+  }
