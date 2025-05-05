@@ -15,7 +15,7 @@
 h1 {
     text-align: center;
     font-size: 50px;
-    color: rgb(225, 0, 255);
+    color: rgb(0, 255, 13);
 }
 
 ul {
@@ -33,7 +33,7 @@ li {
 
 div {
     line-height: 2;
-    color: rgb(43, 255, 0);
+    color: rgb(255, 255, 255);
 }
 
 body {
@@ -48,11 +48,11 @@ body {
 }
 
 img {
-  width: 100%;
+  width: 80%;
 }
 
 footer {
-    color: rgb(246, 255, 0);
+    color: rgb(255, 255, 255);
     text-align: left;
     font-size: medium;
     font-weight: lighter;
@@ -60,7 +60,7 @@ footer {
 }
 
 ul a:hover {
-    color: rgb(0, 17, 255);
+    color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 
