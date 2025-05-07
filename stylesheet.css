@@ -15,7 +15,7 @@
 h1 {
     text-align: left
     font-size: 50px;
-    color: rgb(0, 0, 0);
+    color: rgb(0,0,0);
 }
 
 ul {
@@ -56,7 +56,6 @@ footer {
     text-align: left;
     font-size: medium;
     font-weight: normal
-    clear: left;
 }
 
 ul a:hover {
