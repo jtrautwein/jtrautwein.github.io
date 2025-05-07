@@ -13,16 +13,16 @@
 .col-12 {width: 100%;} 
 
 h1 {
-    text-align: center;
+    text-align: left
     font-size: 50px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 ul {
-    gap: 20px;
     list-style-type: none;
-    text-align: center;
+    text-align: left;
     padding: 0%;
+    color: black;
 }
 
 li {
@@ -33,15 +33,15 @@ li {
 
 div {
     line-height: 2;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 body {
     font-family: "Barlow", sans-serif;
     font-size: large;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     line-height: 1.5em;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     background-image: none;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -52,16 +52,17 @@ img {
 }
 
 footer {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: left;
     font-size: medium;
-    font-weight: lighter;
+    font-weight: normal
     clear: left;
 }
 
 ul a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(46, 143, 37);
     text-decoration: underline;
+    text-decoration-color: aliceblue;
 }
 
   .relative {
