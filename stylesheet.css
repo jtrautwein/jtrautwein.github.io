@@ -1,3 +1,15 @@
+
+.#wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.column {
+  width: 33.33%
+  float: left;
+  margin: 10%
+}
+
 {
   margin: 0;
   padding: 0;
@@ -6,6 +18,8 @@
 
 .columns {
   float: left;
+  width: 100;
+  margin: 0%;
 }
 
 .col-1 { width: 8.33%; }
@@ -82,4 +96,38 @@ grid-item {
   background-color: #eee;
   border: 1px solid #ccc;
   text-align: center;
+}
+
+.footer {
+  display: flex;
+  background-color: #222;
+  flex-wrap: wrap;
+  border-image-width: 30% ;
+}
+
+.footer-left {
+  flex: 1;
+  width: 20%;
+  display: flex;
+  align-items: left;
+  border-image-width: 30% ;
+  flex-wrap: wrap;
+}
+
+.footer-right {
+  flex: 1;
+  width: 20%;
+  display: flex;
+  align-items: right;
+  border-image-width: 30% ;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  border-image-width: 30% ;
+  flex-wrap: wrap;
 }
