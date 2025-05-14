@@ -31,7 +31,7 @@ col-1: width: 100%;
 .col-3 { width: 25%; }
 .col-4 { width: 33.33%; }
 .col-5 { width: 41.66%; }
-.col-6 { width: 50%; }
+.col-6 {width: 50%; }
 .col-7 { width: 58.33%; }
 .col-8 { width: 66.66%; }
 .col-9 { width: 75%; }
@@ -75,7 +75,7 @@ body {
 
 img {
   col-1: width: 8.33%;
-  width: 60%;
+  width: 80%;
 }
 
 footer {
@@ -98,9 +98,9 @@ ul a:hover {
 
 .footer {
   display: flex;
-  background-color: #222;
+  background-color: #ffffff;
   flex-wrap: wrap;
-  border-image-width: 30% ;
+  border-image-width: 10% ;
 }
 
 .footer-left {
@@ -108,7 +108,7 @@ ul a:hover {
   width: 20%;
   display: flex;
   align-items: left;
-  border-image-width: 30% ;
+  border-image-width: 10% ;
   flex-wrap: wrap;
 }
 
@@ -117,7 +117,7 @@ ul a:hover {
   width: 20%;
   display: flex;
   align-items: right;
-  border-image-width: 30% ;
+  border-image-width: 10% ;
   flex-wrap: wrap;
 }
 
@@ -126,6 +126,8 @@ ul a:hover {
   width: 20%;
   display: flex;
   align-items: center;
-  border-image-width: 30% ;
+  border-image-width: 10% ;
   flex-wrap: wrap;
 }
+
+div class="columns col-6"
