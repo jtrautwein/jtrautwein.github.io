@@ -29,11 +29,29 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.moving-square {
+  width: 50px;
+  height: 50px;
+  background-color: #33C3F0;
+  position: relative;
+  animation: moveLeftRight 2s infinite alternate ease-in-out;
+  margin-top: 50px;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
 .container {
   position: relative;
   width: 100%;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 auto;1
   padding: 0 20px;
   box-sizing: border-box; }
 .column,
