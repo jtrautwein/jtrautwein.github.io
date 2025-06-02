@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+  <title>The Very Hungry Caterpillar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      font-family: sans-serif;
+      overflow-x: hidden;
+    }
+
+    .scroll-container {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1;
+      position: relative;
+    }
+
+    .scroll-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    .fixed-layer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      pointer-events: none;
+    }
+
+    .fixed-layer img {
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="fixed-layer">
+    <img src="layer1.png" alt="Fixed Layer 1">
+  </div>
+  <div class="scroll-container">
+    <img src="COVER.png" alt="COVER">
+    <img src="page1.png" alt="Page 1">
+    <img src="page2.png" alt="Page 2">
+    <img src="layer2.png" alt="Layer 2">
+    <img src="page10.png" alt="Page 10">
+    <img src="page11.png" alt="Page 11">
+    <img src="page12.png" alt="Page 12">
+    <img src="page13.png" alt="Page 13">
+    <img src="page14.png" alt="Page 14">
+    <img src="page15.png" alt="Page 15">
+    <img src="page16.png" alt="Page 16">
+  </div>
+</body>
+</html>
