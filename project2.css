@@ -1,0 +1,63 @@
+<head>
+    <link rel="preconnect" href="project2.css">
+<head
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+.fixed-layer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 220px; /* adjust depending on fixed layer height */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-box {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  flex: 1 1 45%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.image-box:hover .overlay-text {
+  opacity: 1;
+}
