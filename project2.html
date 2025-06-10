@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <title>The Very Hungry Caterpillar</title>
   <style>
@@ -23,6 +24,7 @@
     .scroll-container img {
       width: 100%;
       height: auto;
+      display: block;
     }
 
     .fixed-layer {
@@ -35,7 +37,27 @@
     }
 
     .fixed-layer img {
+      width: auto;
+    }
+
+    .image-box {
+      position: relative;
       width: 100%;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(0, 0, 0);
+      font-size: 12px;
+      font-weight: bold;
+
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+      width: 90%;
+      padding: 10px;  
+      pointer-events: none;
     }
 
   </style>
@@ -45,76 +67,92 @@
     <img src="layer1.png" alt="Fixed Layer 1">
   </div>
 
-  <div class="scroll-container container">
-    <div class="image-box">
-      <div class="overlay-text">THE VERY HUNGRY CATERPILLAR by Eric Carler</div>
-      <img src="COVER.png" alt="COVER">
-    </div>
-    <div class="image-box">
-      <div class="overlay-text">For my sister Christa THE VERY HUNGRY CATERPILLAR by Eric Carle</div>
-      <div class="overlay-text">THE VERY HUNGRY CATERPILLAR by Eric Carle</div>
-      <img src="page1.png" alt="Page 1">
-    </div>
-    <div class="image-box">
-      <div class="overlay-text">In the light of the moon a little egg lay on a leaf.</div>
-      <img src="page2.png" alt="Page 2">
-    </div>
-    <div class="image-box">
-      <div class="overlay-text">One Sunday morning the warm sun came up and-pop!— out of the egg came a tiny and very hungry caterpillar.</div>
-      <img src="3 (2).png" alt="Page 3">
-    </div>
-    <div class="image-box">
-      <div class="overlay-text">He started to look for some food.</div>
-      <img src="4 (3).png" alt="Page 4">
-    </div>
-    <div class="image-box">
-      <div class="overlay-text">On Monday he ate through one apple. But he was still hungry.</div>
-      <img src="5.png" alt="Page 5">
-    </div>
-    <div class="image-box">
-      <div class="overlay-text">On Tuesday he ate through two pears, But he was still hungry.</div>
-      <img src="6.png" alt="Page 6">
-    </div>
-    <div class="image-box">
-      <div class="overlay-text">On Wednesday he ate through three plums, but he was still hungry.</div>
-      <img src="7.png" alt="Page 7">
-    </div>
-    <div class="image-box">
-      <div class="overlay-text">On Thursday he ate through four strawberries, but he was still hungry.</div>
-      <img src="8.png" alt="Page 8">
-    </div>
-    <div class="image-box">
-      <div class="overlay-text">On Friday he ate through five oranges, but he was still hungry.</div>
-      <img src="9.png" alt="Page 9">
-    </div>
-    <div class="image-box">
-      <div>div class="overlay-text">On Saturday</div>
-      <div class="overlay-text">he ate through one piece of chocolate cake, one ice-cream cone, one pickle, one slice of Swiss cheese, one slice of salami, one lollipop, one piece of cherry pie, one sausage, one cupcake, and one slice of watermelon.y</div>
-      <div class="overlay-text">That night he had a stomachache!</div>
-      <img src="page10.png" alt="Page 10">
-    </div>
-    <div class="image-box">
-      <div class="overlay-text">The next day was Sunday again. The caterpillar ate through one nice green leaf, and after that he felt much better.</div>
-      <img src="page11.png" alt="Page 11">
-    </div>
-    <div class="image-box">
-      <div class="overlay-text">Now he wasn't hungry any more-and he wasn't a little caterpillar any more.</div>
-      <div class="overlay-text">He was a big, fat caterpillar.</div>
-      <img src="page12.png" alt="Page 12">
-    </div>
-    <div class="image-box">
-      <div class="overlay-text">He built a small house, called a cocoon, around himself. He stayed inside for more than two weeks. Then he nibbled a hole in the cocoon, pushed his way out and...</div>
-      <img src="page13.png" alt="Page 13">
-    </div>
-    <div class="image-box">
-      <div class="overlay-text">he was a beautiful butterfly!</div>
-      <img src="page14.png" alt="Page 14">
-    </div>
-    <div class="image-box">
-      <img src="page15.png" alt="Page 15">
-    </div>
-    <div class="image-box">
-      <img src="page16.png" alt="Page 16">
+  <div class="container">
+    <div class="scroll-container container">
+
+      <div class="image-box">
+        <div class="overlay-text">THE VERY HUNGRY CATERPILLAR by Eric Carle</div>
+        <img src="COVER.png" alt="COVER">
+      </div>
+
+      <div class="image-box">
+        <div class="overlay-text">For my sister Christa THE VERY HUNGRY CATERPILLAR by Eric Carle</div>
+        <img src="page1.png" alt="Page 1">
+      </div>
+
+      <div class="image-box">
+        <div class="overlay-text">In the light of the moon a little egg lay on a leaf.</div>
+        <img src="page2.png" alt="Page 2">
+      </div>
+
+      <div class="image-box">
+        <div class="overlay-text">One Sunday morning the warm sun came up and—pop!—out of the egg came a tiny and very hungry caterpillar.</div>
+        <img src="3 (2).png" alt="Page 3">
+      </div>
+
+      <div class="image-box">
+        <div class="overlay-text">He started to look for some food.</div>
+        <img src="4 (3).png" alt="Page 4">
+      </div>
+
+      <div class="image-box">
+        <div class="overlay-text">On Monday he ate through one apple. But he was still hungry.</div>
+        <img src="5.png" alt="Page 5">
+      </div>
+
+      <div class="image-box">
+        <div class="overlay-text">On Tuesday he ate through two pears. But he was still hungry.</div>
+        <img src="6.png" alt="Page 6">
+      </div>
+
+      <div class="image-box">
+        <div class="overlay-text">On Wednesday he ate through three plums, but he was still hungry.</div>
+        <img src="7.png" alt="Page 7">
+      </div>
+
+      <div class="image-box">
+        <div class="overlay-text">On Thursday he ate through four strawberries, but he was still hungry.</div>
+        <img src="8.png" alt="Page 8">
+      </div>
+
+      <div class="image-box">
+        <div class="overlay-text">On Friday he ate through five oranges, but he was still hungry.</div>
+        <img src="9.png" alt="Page 9">
+      </div>
+
+      <div class="image-box">
+        <div class="overlay-text">On Saturday he ate through one piece of chocolate cake, one ice-cream cone, one pickle, one slice of Swiss cheese, one slice of salami, one lollipop, one piece of cherry pie, one sausage, one cupcake, and one slice of watermelon. That night he had a stomachache!</div>
+        <img src="page10.png" alt="Page 10">
+      </div>
+
+      <div class="image-box">
+        <div class="overlay-text">The next day was Sunday again. The caterpillar ate through one nice green leaf, and after that he felt much better.</div>
+        <img src="page11.png" alt="Page 11">
+      </div>
+
+      <div class="image-box">
+        <div class="overlay-text">Now he wasn't hungry any more—and he wasn't a little caterpillar any more. He was a big, fat caterpillar.</div>
+        <img src="page12.png" alt="Page 12">
+      </div>
+
+      <div class="image-box">
+        <div class="overlay-text">He built a small house, called a cocoon, around himself. He stayed inside for more than two weeks. Then he nibbled a hole in the cocoon, pushed his way out and...</div>
+        <img src="page13.png" alt="Page 13">
+      </div>
+
+      <div class="image-box">
+        <div class="overlay-text">He was a beautiful butterfly!</div>
+        <img src="page14.png" alt="Page 14">
+      </div>
+
+      <div class="image-box">
+        <img src="page15.png" alt="Page 15">
+      </div>
+
+      <div class="image-box">
+        <img src="page16.png" alt="Page 16">
+      </div>
+
     </div>
   </div>
 </body>
