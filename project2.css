@@ -1,4 +1,37 @@
 .image-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+.image-box img {
+  width: 66.66%;
+  height: auto;
+}
+
+.about-text {
+  width: 33.33%;
+  font-size: 12px;
+  text-align: left;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Optional for contrast */
+  color: #000;
+}
+
+.about-text {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 33.33%;
+  font-size: 12px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8); /* Optional for readability */
+  padding: 15px;
+  color: #000;
+}
+
+.image-box {
   position: relative;
   width: 100%;
 }
@@ -10,19 +43,22 @@
 }
 
 .overlay-text {
+  font-family: 'Helvetica', 'Arial', sans-serif;
   position: absolute;
-  top: 30;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: bold;
-  text-align: center;
-  text-shadow: 1px 1px 4px rgb(255, 255, 255);
-  width: 90%;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+  opacity: 1;
   pointer-events: none;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-radius: 10px;
 }
-
 .image-box {
   position: relative;
   height: 100vh;

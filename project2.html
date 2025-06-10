@@ -27,51 +27,38 @@
       display: block;
     }
 
-    .fixed-layer {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 999;
-      pointer-events: none;
-    }
-
-    .fixed-layer img {
-      width: auto;
-    }
-
     .image-box {
       position: relative;
       width: 100%;
     }
-
+    
     .overlay-text {
       position: absolute;
-      top: 50%;
+      top: 30%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: rgb(0, 0, 0);
-      font-size: 12px;
+      font-size: 15px;
       font-weight: bold;
-
-      text-shadow: 1px 1px 4px rgb(255, 255, 255), 0.6);
+      text-align: right
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
       width: 90%;
-      padding: 10px;  
+      padding: 10px;
       pointer-events: none;
     }
 
   </style>
 </head>
 <body>
-  <div class="fixed-layer">
-    <img src="layer1.png" alt="Fixed Layer 1">
-  </div>
 
   <div class="container">
     <div class="scroll-container container">
 
       <div class="image-box">
-        <div class="overlay-text">THE VERY HUNGRY CATERPILLAR by Eric Carle</div>
+        <div class="overlay-text" style="text-align: center; left: 50%; transform: translate(-50%, -50%);">
+        THE VERY HUNGRY CATERPILLAR by Eric Carle
+      </div>
+
         <img src="COVER (1).png" alt="COVER">
       </div>
 
@@ -81,8 +68,8 @@
       </div>
 
       <div class="image-box">
-        <div class="overlay-text">In the light of the moon a little egg lay on a leaf.</div>
-        <img src="page2.png" alt="Page 2">
+        <div class="overlay-text" style="color: white;">In the light of the moon a little egg lay on a leaf.</div>
+        <img src="Moon.png" alt="Page 2">
       </div>
 
       <div class="image-box">
@@ -91,32 +78,40 @@
       </div>
 
       <div class="image-box">
-        <div class="overlay-text">He started to look for some food.</div>
+        <div class="overlay-text"style="top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: left;">
+          He started to look for some food.</div>
         <img src="5.png" alt="Page 4">
       </div>
 
       <div class="image-box">
-        <div class="overlay-text">On Monday he ate through one apple. But he was still hungry.</div>
+        <div class="overlay-text" style="top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: left;">
+         On Monday he ate through one apple. But he was still hungry.
+    </div>
         <img src="6.png" alt="Page 5">
       </div>
 
       <div class="image-box">
-        <div class="overlay-text">On Tuesday he ate through two pears. But he was still hungry.</div>
+        <div class="overlay-text" style="top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: left;">
+        On Tuesday he ate through two pears. But he was still hungry.
+  </div>
         <img src="7.png" alt="Page 6">
       </div>
 
       <div class="image-box">
-        <div class="overlay-text">On Wednesday he ate through three plums, but he was still hungry.</div>
+        <div class="overlay-text" style="top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: left;">
+          On Wednesday he ate through three plums, but he was still hungry.</div>
         <img src="8.png" alt="Page 7">
       </div>
 
       <div class="image-box">
-        <div class="overlay-text">On Thursday he ate through four strawberries, but he was still hungry.</div>
+        <div class="overlay-text" style="top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: left;">
+          On Thursday he ate through four strawberries, but he was still hungry.</div>
         <img src="9.png" alt="Page 8">
       </div>
 
       <div class="image-box">
-        <div class="overlay-text">On Friday he ate through five oranges, but he was still hungry.</div>
+        <div class="overlay-text" style="top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: left;">
+          On Friday he ate through five oranges, but he was still hungry.</div>
         <img src="10.png" alt="Page 9">
       </div>
 
@@ -141,7 +136,8 @@
       </div>
 
       <div class="image-box">
-        <div class="overlay-text">He was a beautiful butterfly!</div>
+        <div class="overlay-text"style="text-align: left; transform: translate(-50%, -50%);">
+          He was a beautiful butterfly!</div>
         <img src="15.png" alt="Page 14">
       </div>
 
@@ -151,6 +147,28 @@
 
       <div class="image-box">
         <img src="17.png" alt="Page 16">
+      </div>
+     
+     <div class="image-box" style="display: flex; align-items: flex-start;">
+        <img src="about.jpg" alt="Page 16" style="width: 66.66%; height: auto;">
+      <div class="text" style="width: 33.33%; font-size: 10px; text-align: left; padding: 10px; background-color: rgba(255,255,255,0.8); color: #000;">
+        <strong>About the Author: Eric Carle</strong><br><br>
+    Eric Carle was a beloved American author, illustrator, and visual storyteller best known for his timeless children's book <em>The Very Hungry Caterpillar</em>. Born on June 25, 1929, in Syracuse, New York, Carle moved to Germany with his family at the age of six. There, he spent most of his youth and later attended art school at the Akademie der bildenden Künste in Stuttgart. His early life was shaped by the experiences of World War II, but also by an early love of nature, instilled by long walks with his father, who taught him to observe the beauty of tiny creatures and growing things—details that would later become central to his books.<br><br>
+
+    Carle returned to the United States as a young man and began working as a graphic designer in the advertising world. However, his true calling came when author Bill Martin Jr. noticed Carle’s distinct illustration style and invited him to collaborate on the book <em>Brown Bear, Brown Bear, What Do You See?</em> (1967). The success of that project launched Carle’s career in children’s literature. Just two years later, Carle wrote and illustrated his most iconic book: <em>The Very Hungry Caterpillar</em>.<br><br>
+
+    First published in 1969, <em>The Very Hungry Caterpillar</em> has sold over 55 million copies worldwide and been translated into more than 70 languages. It tells the story of a small caterpillar who eats his way through a variety of foods before transforming into a beautiful butterfly. With its simple text, interactive die-cut pages, and bold, colorful illustrations, the book quickly became a classic. It also introduced many children to basic concepts like counting, days of the week, and the life cycle of a butterfly—all wrapped in a gentle narrative of transformation and growth.<br><br>
+
+    Carle’s signature artistic style—brightly colored collages made from hand-painted tissue paper—made his illustrations instantly recognizable. His work was often inspired by nature and guided by a deep respect for children. He believed that picture books should not only educate but also comfort and inspire. “With my books,” he once said, “I try to bridge the gap between home and school, between the child’s attention span and the curious mind.”<br><br>
+
+    Over the course of his career, Eric Carle wrote and illustrated more than 70 books, including <em>The Very Busy Spider</em>, <em>The Grouchy Ladybug</em>, and <em>Papa, Please Get the Moon for Me</em>. In 2002, he and his late wife Barbara founded The Eric Carle Museum of Picture Book Art in Amherst, Massachusetts—a space dedicated to celebrating the art of the picture book and encouraging creativity in children.<br><br>
+
+    Eric Carle passed away on May 23, 2021, at the age of 91. His books continue to delight and educate children around the world, and his legacy lives on through the joy of storytelling, art, and wonder he brought into so many young lives.
+  </div>
+</div>
+
+
+</div>
       </div>
 
     </div>
