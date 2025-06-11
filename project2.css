@@ -1,4 +1,12 @@
+@keyframes floatUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
 
+.float {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
 
 .image-box {
   display: flex;

@@ -92,7 +92,7 @@
     </div>
 
     <div class="image-box">
-      <div class="overlay-text overlay-white">In the light of the moon a little egg lay on a leaf.</div>
+      <div class="overlay-text centered-left overlay-white" style="position: absolute; top: 10%; left: 50%; transform: translateX(-50%); font-weight: bold;">In the light of the moon a little egg lay on a leaf.</div>
       <img src="Moon.png" alt="Egg on leaf at night">
     </div>
 
@@ -137,7 +137,7 @@
     </div>
 
     <div class="image-box">
-      <div class="overlay-text">The next day was Sunday again. The caterpillar ate through one nice green leaf, and after that he felt much better.</div>
+      <div class="div class="overlay-text" style="position: absolute; top: 25%; left: 35%; transform: translateX(-50%); font-weight: bold;">The next day was Sunday again. The caterpillar ate through one nice green leaf, and after that he felt much better.</div>
       <img src="12.png" alt="Green leaf">
     </div>
 
@@ -151,10 +151,24 @@
       <img src="14.png" alt="Cocoon">
     </div>
 
-    <div class="image-box">
-      <div class="overlay-text">He was a beautiful butterfly!</div>
-      <img src="15.png" alt="Butterfly">
-    </div>
+
+<div class="image-box">
+  <div class="overlay-text" style="position: absolute; top: 10%; left: 50%; transform: translateX(-50%); font-weight: bold;">
+    He was a beautiful butterfly!
+  </div>
+  <img src="butterfly.png" alt="Butterfly"
+       style="animation: floatUpDown 3s ease-in-out infinite; display: block; width: 100%;">
+</div>
+
+<style>
+  @keyframes floatUpDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+  }
+</style>
+
+    
 
     <div class="image-box">
       <img src="16.png" alt="Page 15 illustration">
